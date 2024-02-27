@@ -37,14 +37,13 @@ const vILike = [
   },
 ];
 
+function renderVtuber(idol) {
+  console.log(idol);
+  return <Vtuber name={idol.name} picture={idol.image} />;
+}
+
 function App() {
-  return (
-    <div>
-      {vILike.map((idol) => (
-        <Vtuber key={idol.name} name={idol.name} picture={idol.image} />
-      ))}
-    </div>
-  );
+  return <div>{vILike.map(renderVtuber)}</div>;
 }
 
 export default App;
