@@ -1,0 +1,45 @@
+.movie {
+  margin-bottom: 70px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  height: 100%;
+  position: relative;
+}
+
+.movie img {
+  max-width: 120px;
+  height: 200px;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+}
+.movie h3,
+.movie h5 {
+  font-weight: 300;
+}
+.movie__data {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  background-color: white;
+  padding-left: 140px;
+  margin: 10px 0 0 10px;
+}
+.movie__data {
+  margin: 0;
+}
+.movie__summary {
+  font-size: 10px;
+}
+.genres {
+  list-style: none;
+  padding: 0;
+  margin: 5px;
+  display: flex;
+  width: 100%;
+}
+.genres__genre {
+  margin-right: 10px;
+}
